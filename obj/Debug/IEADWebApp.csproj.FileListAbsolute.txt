@@ -1,0 +1,6 @@
+c:\users\lenk\documents\visual studio 2013\Projects\IEADWebApp\IEADWebApp\bin\IEADWebApp.dll.config
+c:\users\lenk\documents\visual studio 2013\Projects\IEADWebApp\IEADWebApp\bin\IEADWebApp.dll
+c:\users\lenk\documents\visual studio 2013\Projects\IEADWebApp\IEADWebApp\bin\IEADWebApp.pdb
+c:\users\lenk\documents\visual studio 2013\Projects\IEADWebApp\IEADWebApp\obj\Debug\IEADWebApp.dll
+c:\users\lenk\documents\visual studio 2013\Projects\IEADWebApp\IEADWebApp\obj\Debug\IEADWebApp.pdb
+C:\Users\Lenk\Documents\Visual Studio 2013\Projects\IEADWebApp\IEADWebApp\obj\Debug\IEADWebApp.csprojResolveAssemblyReference.cache

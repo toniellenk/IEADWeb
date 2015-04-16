@@ -1,0 +1,21 @@
+﻿
+#TabMemb { background-color:#BEBEBE;
+}
+
+#CodMemb {
+    text-align: center;
+    width: 30px;
+}
+
+body{
+    background-color:gray;
+}
+
+#tit{
+    align-items:center;
+    background-color:gray;
+    font-family:Arial;
+    font-size:20px;
+    font-size-adjust:initial;
+    text-align:center;
+}
