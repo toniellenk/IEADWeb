@@ -32,8 +32,10 @@ namespace IEADWebApp
 
         protected void Limpar_Clik(object sender, EventArgs e)
         {
-            CodMemb.Text = "";
-        
+            thy CodMemb.Text <> "" 
+                CodMemb.Text = "";
+            cath
+                Response.Write(MessageBox("A Consulta já está Limpa")); 
         }
 
         protected void ListMemb(object sender, EventArgs e)
