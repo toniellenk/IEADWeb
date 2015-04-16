@@ -1,6 +1,9 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CadMemb.aspx.cs" Inherits="IEADWebApp.CadMemb" %>
+<!DOCTYPE html>
 <html>
 <head runat="server">
 <title> Cadastro de Membros</title>
+<link type="html/css" href="StyleInicial.css"/>
 </head>
 <body>
 <h3>Cadastro de novo membro</h3>
