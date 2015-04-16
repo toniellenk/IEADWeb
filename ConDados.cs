@@ -18,10 +18,13 @@ namespace IEADWebApp
 
         public DataTable Consulta() { 
         
-        
+                /*Cria o objeto de conexão com o banco */
                 SqlConnection ObjConn = new SqlConnection(SrtCon);
+                /*Cria o objeto de execução do comando */
                 SqlCommand ObjCmd = new SqlCommand(StrSelect, ObjConn);
+                /*Executa o comando*/
                 SqlDataAdapter da = new SqlDataAdapter(ObjCmd);
+                /*Abre a conexão */
                 ObjConn.Open();                                
                 da.Fill(ds);
                 ObjConn.Close();
