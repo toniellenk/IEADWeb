@@ -48,6 +48,13 @@ namespace IEADWebApp
             GridMemb.DataSource = teste.Consulta();
         
         }
+        
+        protected void Novo_Memb(object sender, EventArgs e)
+        {
+            
+        Show.PnMemb;
+            
+        }
 
 
     }
