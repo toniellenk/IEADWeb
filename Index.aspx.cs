@@ -32,30 +32,38 @@ namespace IEADWebApp
 
         protected void Limpar_Clik(object sender, EventArgs e)
         {
-            if (CodMemb.Text <> "") 
-            { 
+            if (CodMemb.Text != "") {
+                 
                 CodMemb.Text = "";
-            }
+            }    
             else
             {
                 Response.Write(MessageBox("A Consulta já está Limpa!")); 
-            }
+            }     
         }
 
         protected void ListMemb(object sender, EventArgs e)
         {
             ConDados teste = new ConDados();
-            GridMemb.DataSource = teste.Consulta();
-        
-        }
-        
-        protected void Novo_Memb(object sender, EventArgs e)
-        {
+            DataTable membros = teste.Consulta();
+            if (membros.Rows.Count > 0)
+           {
+                GridMemb.DataSource = membros;
+                GridMemb.DataBind();
+            }
+           else {
+                Response.Write(MessageBox("Não existem dados a serem retornados!")); 
+            }
+
             
-        Show.PnMemb;
-            
+        
         }
 
+        protected void NovoMemb(object sender, EventArgs e)
+        {
+            Response.Redirect("CadMemb.aspx");
+            
+        }
 
     }
 }

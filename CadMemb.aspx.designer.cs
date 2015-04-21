@@ -10,52 +10,88 @@
 namespace IEADWebApp {
     
     
-    public partial class Index {
+    public partial class CadMemb {
         
         /// <summary>
-        /// Telainicial control.
+        /// FormCadMemb control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm Telainicial;
+        protected global::System.Web.UI.HtmlControls.HtmlForm FormCadMemb;
         
         /// <summary>
-        /// CodMemb control.
+        /// NomeMemb control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CodMemb;
+        protected global::System.Web.UI.WebControls.TextBox NomeMemb;
         
         /// <summary>
-        /// ConsultarMemb control.
+        /// SexMemb control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ConsultarMemb;
+        protected global::System.Web.UI.WebControls.TextBox SexMemb;
         
         /// <summary>
-        /// Listar control.
+        /// TelMemb control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Listar;
+        protected global::System.Web.UI.WebControls.TextBox TelMemb;
         
         /// <summary>
-        /// Limpar control.
+        /// EndMemb control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Limpar;
+        protected global::System.Web.UI.WebControls.TextBox EndMemb;
+        
+        /// <summary>
+        /// UfMemb control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox UfMemb;
+        
+        /// <summary>
+        /// CidMemb control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox CidMemb;
+        
+        /// <summary>
+        /// CepMemb control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox CepMemb;
+        
+        /// <summary>
+        /// TipMemb control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TipMemb;
         
         /// <summary>
         /// ButCadMemb control.
@@ -65,23 +101,5 @@ namespace IEADWebApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button ButCadMemb;
-        
-        /// <summary>
-        /// GridMemb control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DataGrid GridMemb;
-        
-        /// <summary>
-        /// Texto control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Texto;
     }
 }

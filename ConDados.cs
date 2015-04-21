@@ -12,7 +12,7 @@ namespace IEADWebApp
     {
 
         string SrtCon = ConfigurationManager.ConnectionStrings["root"].ConnectionString;
-        string StrSelect = "SELECT * FROM t0050";
+        string StrSelect = "select * from t0050";
         protected DataSet ds = new DataSet();
         protected DataTable dt = new DataTable();
 
@@ -22,13 +22,13 @@ namespace IEADWebApp
                 SqlConnection ObjConn = new SqlConnection(SrtCon);
                 /*Cria o objeto de execução do comando */
                 SqlCommand ObjCmd = new SqlCommand(StrSelect, ObjConn);
+                ObjConn.Open();   
                 /*Executa o comando*/
                 SqlDataAdapter da = new SqlDataAdapter(ObjCmd);
                 /*Abre a conexão */
-                ObjConn.Open();                                
                 da.Fill(ds);
-                ObjConn.Close();
                 dt = ds.Tables[0];
+                ObjConn.Close();
                 return dt;
         }
 
