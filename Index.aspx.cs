@@ -22,7 +22,18 @@ namespace IEADWebApp
 
         protected void ConsultarMemb_Click(object sender, EventArgs e)
         {
-            CodMemb.Text = "Toniel Lenk Moraes";
+            private int IntCodMemb = Convert.ToInt32(CodMemb.Text);
+            ConDados Dados = new ConDados();
+            DataTable membros = Dados.Consulta(IntCodMemb);
+            if (membros.Rows.Count > 0)
+                {             
+                GridMemb.DataSource = membros;
+                GridMemb.DataBind();
+                }
+           else {
+                Response.Write(MessageBox("Não existe o membro de código:"+IntCodMemb)); 
+                }
+
           /*  Response.Write(MessageBox("teste")); */
         }
 
@@ -46,8 +57,8 @@ namespace IEADWebApp
 
         protected void ListMemb(object sender, EventArgs e)
         {
-            ConDados teste = new ConDados();
-            DataTable membros = teste.Consulta();
+            ConDados Dados = new ConDados();
+            DataTable membros = Dados.Consulta();
             if (membros.Rows.Count > 0)
            {             
                 GridMemb.DataSource = membros;
@@ -55,11 +66,8 @@ namespace IEADWebApp
                 //GridMemb.Columns[0].HeaderText = "Release Date";
             }
            else {
-                Response.Write(MessageBox("Não existem dados a serem retornados!")); 
+                Response.Write(MessageBox("Não existem membros  a serem retornados.")); 
             }
-
-            
-        
         }
 
         protected void NovoMemb(object sender, EventArgs e)
