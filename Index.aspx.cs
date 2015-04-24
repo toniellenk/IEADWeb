@@ -13,7 +13,9 @@ namespace IEADWebApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+           // GridMemb.Columns.Add(new DataColumn("Qty", typeof(String)));
+           // GridMemb.Columns.Add(new DataColumn("Item", typeof(String)));
+           // GridMemb.Columns.Add(new DataColumn("Price", typeof(String)));
             
          }
 
@@ -47,9 +49,10 @@ namespace IEADWebApp
             ConDados teste = new ConDados();
             DataTable membros = teste.Consulta();
             if (membros.Rows.Count > 0)
-           {
+           {             
                 GridMemb.DataSource = membros;
                 GridMemb.DataBind();
+                //GridMemb.Columns[0].HeaderText = "Release Date";
             }
            else {
                 Response.Write(MessageBox("Não existem dados a serem retornados!")); 
@@ -63,6 +66,11 @@ namespace IEADWebApp
         {
             Response.Redirect("CadMemb.aspx");
             
+        }
+
+        protected void GridMemb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
 
     }

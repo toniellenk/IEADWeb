@@ -27,7 +27,9 @@
                     </td>
                 </tr>
         </table>
-        <asp:DataGrid runat="server" ID="GridMemb"></asp:DataGrid>
+        <asp:DataGrid runat="server" ID="GridMemb" AlternatingItemStyle-BackColor="#CCCCFF" BackColor="#BEBEBE">
+<AlternatingItemStyle BackColor="#CCCCFF"></AlternatingItemStyle>
+        </asp:DataGrid>
         <asp:Label ID="Texto" runat="server" />
     </div>
     </form>
