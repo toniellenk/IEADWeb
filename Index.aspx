@@ -27,9 +27,16 @@
                     </td>
                 </tr>
         </table>
-        <asp:DataGrid runat="server" ID="GridMemb" AlternatingItemStyle-BackColor="#CCCCFF" BackColor="#BEBEBE">
-<AlternatingItemStyle BackColor="#CCCCFF"></AlternatingItemStyle>
-        </asp:DataGrid>
+        <asp:GridView runat="server" ID="GridMemb" AlternatingItemStyle-BackColor="#CCCCFF" BackColor="#BEBEBE" autogeratecolunms="true">
+                        <AlternatingItemStyle BackColor="#CCCCFF"></AlternatingItemStyle>
+                        <asp:boundfield datafield="IdMemb" headertext="ID"/>
+                        <asp:boundfield datafield="NomeMemb" headertext="Nome"/>
+                        <asp:boundfield datafield="SexMemb" headertext="Sexo"/>
+                        <asp:boundfield datafield="TipMemb" headertext="Tipo"/>
+                        <asp:boundfield datafield="CidMemb" headertext="Cidade"/>
+                        <asp:boundfield datafield="CepMemb" headertext="CEP"/>
+                        <asp:boundfield datafield="EndMemb" headertext="Endereço"/>
+        </asp:GridView>
         <asp:Label ID="Texto" runat="server" />
     </div>
     </form>
