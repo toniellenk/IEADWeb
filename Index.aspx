@@ -28,6 +28,7 @@
                 </tr>
         </table>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <asp:GridView runat="server" ID="GridMemb" AlternatingItemStyle-BackColor="#CCCCFF" BackColor="#BEBEBE" autogeratecolunms="true">
                         <AlternatingItemStyle BackColor="#CCCCFF"></AlternatingItemStyle>
                         <asp:boundfield datafield="idmembro" headertext="ID"/>
@@ -39,6 +40,11 @@
                         <asp:boundfield datafield="sexo" headertext="Sexo"/>
                         <asp:boundfield datafield="tipomembro" headertext="Tipo"/>
         </asp:GridView>
+=======
+        <asp:DataGrid runat="server" ID="GridMemb" AlternatingItemStyle-BackColor="#CCCCFF" BackColor="#BEBEBE">
+<AlternatingItemStyle BackColor="#CCCCFF"></AlternatingItemStyle>
+        </asp:DataGrid>
+>>>>>>> parent of ff1bde9... Update Index.aspx
 =======
         <asp:DataGrid runat="server" ID="GridMemb" AlternatingItemStyle-BackColor="#CCCCFF" BackColor="#BEBEBE">
 <AlternatingItemStyle BackColor="#CCCCFF"></AlternatingItemStyle>
