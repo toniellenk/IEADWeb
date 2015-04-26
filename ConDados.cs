@@ -33,24 +33,6 @@ namespace IEADWebApp
                 return dt;
         }
         
-                public DataTable Consulta(int idmembro) { 
-                    
-                /*Query SQL*/    
-                private string StrSelect = "select * from t0050 where idmembro = @idmembro";
-               
-                SqlConnection ObjConn = new SqlConnection(SrtCon);
-                SqlCommand ObjCmd = new SqlCommand(StrSelect, ObjConn);
-                
-                /*Definição de parãmetros da Query */
-                ObjCmd.Parameters.AddWithValue("@idmembro", idmembro)
-                
-                ObjConn.Open();   
-                SqlDataAdapter da = new SqlDataAdapter(ObjCmd);
-                da.Fill(ds);
-                dt = ds.Tables[0];
-                ObjConn.Close();
-                return dt;
-        }
 
 
         public string nome {

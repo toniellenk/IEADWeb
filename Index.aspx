@@ -29,13 +29,14 @@
         </table>
         <asp:GridView runat="server" ID="GridMemb" AlternatingItemStyle-BackColor="#CCCCFF" BackColor="#BEBEBE" autogeratecolunms="true">
                         <AlternatingItemStyle BackColor="#CCCCFF"></AlternatingItemStyle>
-                        <asp:boundfield datafield="IdMemb" headertext="ID"/>
-                        <asp:boundfield datafield="NomeMemb" headertext="Nome"/>
-                        <asp:boundfield datafield="SexMemb" headertext="Sexo"/>
-                        <asp:boundfield datafield="TipMemb" headertext="Tipo"/>
-                        <asp:boundfield datafield="CidMemb" headertext="Cidade"/>
-                        <asp:boundfield datafield="CepMemb" headertext="CEP"/>
-                        <asp:boundfield datafield="EndMemb" headertext="Endereço"/>
+                        <asp:boundfield datafield="idmembro" headertext="ID"/>
+                        <asp:boundfield datafield="nome" headertext="Nome"/>
+                        <asp:boundfield datafield="cidade" headertext="Cidade"/>
+                        <asp:boundfield datafield="uf" headertext="UF"/>
+                        <asp:boundfield datafield="endereco" headertext="Endereço"/>
+                        <asp:boundfield datafield="tel" headertext="Telefone"/>
+                        <asp:boundfield datafield="sexo" headertext="Sexo"/>
+                        <asp:boundfield datafield="tipomembro" headertext="Tipo"/>
         </asp:GridView>
         <asp:Label ID="Texto" runat="server" />
     </div>
