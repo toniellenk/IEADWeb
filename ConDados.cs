@@ -32,7 +32,10 @@ namespace IEADWebApp
                 return dt;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         
+=======
+>>>>>>> parent of bc6455e... Update ConDados.cs
 =======
 >>>>>>> parent of bc6455e... Update ConDados.cs
 
