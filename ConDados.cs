@@ -12,12 +12,11 @@ namespace IEADWebApp
     {
 
         string SrtCon = ConfigurationManager.ConnectionStrings["root"].ConnectionString;
+        string StrSelect = "select * from t0050";
         protected DataSet ds = new DataSet();
         protected DataTable dt = new DataTable();
 
         public DataTable Consulta() { 
-            
-                private string StrSelect = "select * from t0050";
         
                 /*Cria o objeto de conexão com o banco */
                 SqlConnection ObjConn = new SqlConnection(SrtCon);
@@ -32,7 +31,10 @@ namespace IEADWebApp
                 ObjConn.Close();
                 return dt;
         }
+<<<<<<< HEAD
         
+=======
+>>>>>>> parent of bc6455e... Update ConDados.cs
 
 
         public string nome {
