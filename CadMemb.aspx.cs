@@ -25,7 +25,7 @@ namespace IEADWebApp
       private string tip = TipMemb.Text;
       
       ConDados InsDados = new ConDados();
-      InsDados.Inserir(nome, sexo, tel, end, uf, cid, cep, tip);
+      InsDados.inserir(nome, sexo, tel, end, uf, cid, cep, tip);
   }
 
   // public void Novomemb() { 
