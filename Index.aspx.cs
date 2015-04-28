@@ -22,7 +22,18 @@ namespace IEADWebApp
 
         protected void ConsultarMemb_Click(object sender, EventArgs e)
         {
-            CodMemb.Text = "Toniel Lenk Moraes";
+            int IntCodMemb = Convert.ToInt32(CodMemb.Text);
+            ConDados Dados = new ConDados();
+            DataTable membros = Dados.Consulta(IntCodMemb);
+            if (membros.Rows.Count > 0)
+                {             
+                GridMemb.DataSource = membros;
+                GridMemb.DataBind();
+                }
+           else {
+                Response.Write(MessageBox("Não existe o membro de código:"+IntCodMemb)); 
+                }
+
           /*  Response.Write(MessageBox("teste")); */
         }
 

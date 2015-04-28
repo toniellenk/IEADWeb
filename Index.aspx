@@ -10,7 +10,7 @@
 <body>
     <p id:"tit >Bem vindo ao sistema IEAD (Igreja Evangélica Assembéia de Deus). </p>
     <form id="Telainicial" runat="server">
-    <div>
+
         <table border="0" id="TabMemb">
             <tr><td colspan="5" style="text-align:center">Membros</td></tr>
             <tr>
@@ -27,10 +27,11 @@
                     </td>
                 </tr>
         </table>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <asp:GridView runat="server" ID="GridMemb" AlternatingItemStyle-BackColor="#CCCCFF" BackColor="#BEBEBE" autogeratecolunms="true">
-                        <AlternatingItemStyle BackColor="#CCCCFF"></AlternatingItemStyle>
+
+        <asp:GridView runat="server" ID="GridMemb" BackColor="#BEBEBE" AlternatingRowStyle-BackColor="#CCCCFF" AutoGenerateColumns="False">
+            
+                        <AlternatingRowStyle BackColor="#CCCCFF"></AlternatingRowStyle>
+            <Columns>
                         <asp:boundfield datafield="idmembro" headertext="ID"/>
                         <asp:boundfield datafield="nome" headertext="Nome"/>
                         <asp:boundfield datafield="cidade" headertext="Cidade"/>
@@ -39,19 +40,9 @@
                         <asp:boundfield datafield="tel" headertext="Telefone"/>
                         <asp:boundfield datafield="sexo" headertext="Sexo"/>
                         <asp:boundfield datafield="tipomembro" headertext="Tipo"/>
+            </Columns>
+            
         </asp:GridView>
-=======
-        <asp:DataGrid runat="server" ID="GridMemb" AlternatingItemStyle-BackColor="#CCCCFF" BackColor="#BEBEBE">
-<AlternatingItemStyle BackColor="#CCCCFF"></AlternatingItemStyle>
-        </asp:DataGrid>
->>>>>>> parent of ff1bde9... Update Index.aspx
-=======
-        <asp:DataGrid runat="server" ID="GridMemb" AlternatingItemStyle-BackColor="#CCCCFF" BackColor="#BEBEBE">
-<AlternatingItemStyle BackColor="#CCCCFF"></AlternatingItemStyle>
-        </asp:DataGrid>
->>>>>>> parent of ff1bde9... Update Index.aspx
-        <asp:Label ID="Texto" runat="server" />
-    </div>
     </form>
 </body>
 </html>
